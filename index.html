@@ -27,7 +27,8 @@ style="width:100%;height:180px;object-fit:cover;border-radius:10px;">
 <p>Fight to become the last player standing.</p>
 </div>
 
-</section>
+</section> 
+
 
 <footer>
 <p>© 2026 Kings Game. All Rights Reserved.</p>
@@ -35,3 +36,90 @@ style="width:100%;height:180px;object-fit:cover;border-radius:10px;">
 
 </body>
   </html>
+.section{
+padding:50px 20px;
+text-align:center;
+}
+
+.video{
+display:flex;
+justify-content:center;
+margin:30px 0;
+}
+
+.video iframe{
+width:90%;
+max-width:800px;
+height:450px;
+border:none;
+border-radius:12px;
+}
+
+.news{
+max-width:900px;
+margin:auto;
+text-align:left;
+line-height:1.8;
+font-size:18px;
+}
+
+footer{
+background:#111;
+padding:25px;
+text-align:center;
+margin-top:40px;
+}
+
+footer a{
+color:#00ff99;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🎮 Kings Game</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#games">Games</a>
+<a href="#videos">Videos</a>
+<a href="#news">News</a>
+<a href="#contact"> 
+  <h2 class="section-title" id="contact">Contact Us</h2>
+
+<section class="section">
+<p>Email: kingsgame@email.com</p>
+<p>YouTube: Kings Game</p>
+<p>Discord: Coming Soon</p>
+</section>
+
+<footer>
+<p>© 2026 Kings Game. All Rights Reserved.</p>
+<p>
+<a href="#">Home</a> |
+<a href="#games">Games</a> |
+<a href="#videos">Videos</a> |
+<a href="#news">News</a> |
+<a href="#contact">Contact</a>
+</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+card.addEventListener("mouseenter",()=>{
+card.style.boxShadow="0 0 25px #00ff99";
+});
+
+card.addEventListener("mouseleave",()=>{
+card.style.boxShadow="none";
+});
+});
+</script>
+
+</body>
+</html>
