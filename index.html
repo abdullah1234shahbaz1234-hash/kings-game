@@ -1,147 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+minecraft.net" target="_blank">
+Official Minecraft Website
+</a>
 
-<title>Kings Game</title>
+  </section>
+  <section id="videos" class="news">
+<h2>Gameplay Videos</h2>
 
-<style>
+<a class="btn"
+href="https://www.youtube.com/results?search_query=minecraft+gameplay"
+target="_blank">
+▶ Watch Minecraft Gameplay
+</a>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<br><br>
 
-body{
-font-family:Arial,sans-serif;
-background:#0d1117;
-color:white;
-}
+<a class="btn"
+href="https://www.youtube.com/results?search_query=gta+5+gameplay"
+target="_blank">
+▶ Watch GTA V Gameplay
+</a>
 
-header{
-background:linear-gradient(90deg,#6a00ff,#9c27ff);
-padding:20px;
-position:sticky;
-top:0;
-z-index:1000;
-}
+<br><br>
 
-header h1{
-text-align:center;
-font-size:40px;
-}
+<a class="btn"
+href="https://www.youtube.com/results?search_query=bgmi+gameplay"
+target="_blank">
+▶ Watch BGMI Gameplay
+</a>
 
-nav{
-margin-top:15px;
-text-align:center;
-}
+<br><br>
 
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-}
+<a class="btn"
+href="https://www.youtube.com/results?search_query=free+fire+gameplay"
+target="_blank">
+▶ Watch Free Fire Gameplay
+</a>
 
-nav a:hover{
-color:#00ff99;
-}
+  </section>
 
-.hero{
-height:90vh;
-background:url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600") center/cover;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-}
 
-.hero-content{
-background:rgba(0,0,0,.6);
-padding:40px;
-border-radius:15px;
-max-width:700px;
-}
+<footer>
 
-.hero h2{
-font-size:50px;
-margin-bottom:15px;
-}
+<p>© 2026 Kings Game. All Rights Reserved.</p>
 
-.hero p{
-font-size:22px;
-margin-bottom:25px;
-}
+<br>
 
-.btn{
-display:inline-block;
-background:#00c853;
-color:white;
-padding:15px 35px;
-border-radius:10px;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-transition:.3s;
-}
+<p>
 
-.btn:hover{
-background:#00e676;
-transform:scale(1.05);
-}
+<a href="#">Home</a> |
 
-.section-title{
-text-align:center;
-font-size:40px;
-margin:60px 0 30px;
-}
+<a href="#games">Games</a> |
 
-.games{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-padding:20px;
-max-width:1200px;
-margin:auto;
-}
+<a href="#videos">Videos</a> |
 
-.card{
-background:#161b22;
-border-radius:15px;
-overflow:hidden;
-transition:.3s;
-}
+<a href="#contact">Contact</a>
 
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px #00ff99;
-}
+</p>
 
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
+</footer>
 
-.card h3{
-padding:15px 10px 5px;
-font-size:28px;
-text-align:center;
-}
+<script>
 
-.card p{
-padding:0 15px 20px;
-text-align:center;
-font-size:18px;
-line-height:1.6; 
-  
-}.section{
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+card.addEventListener("mouseenter",()=>{
+
+card.style.boxShadow="0 0 25px #00ff99";
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.boxShadow="none";
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
+.section{
 padding:60px 20px;
+text-align:center;
 }
 
 .video{
@@ -226,38 +170,11 @@ height:250px;
 <h2 class="section-title" id="games">Popular Games</h2>
 
 <section class="games">
-  <a href="https://www.minecraft.net/" target="_blank" style="text-decoration:none;color:inherit;">
-<div class="card">
-    <img src="a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a.jpeg"
-         alt="Minecraft"
-         style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
-
-    <h3>Minecraft</h3>
-    <p>Build, explore and survive in an endless world.</p>
-<div class="card">
-    <img src="v_640x400.jpg"
-         alt="GTA V"
-         style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
-
-    <h3>GTA V</h3>
-    <p>Experience the ultimate open-world adventure.</p>
-<img src="Battleground_Mobile_India.webp.png"
-     alt="BGMI"
-     style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
-<h3>BGMI</h3>
-<p>Fight to become the last player standing.</p>
 
 <div class="card">
-    <img src="Free_Fire.webp"
-         alt="Free Fire"
-         style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
-
-    <h3>Free Fire</h3>
-    <p>Battle your enemies and become the last survivor.</p>
-</div>
-
-</section>
-<h2 class="section-title" id="videos">Gameplay Video</h2>
+<a href="https://www.minecraft.net/" target="_blank">
+<img src="a28a81253e919298beab2295e  
+  <h2 class="section-title" id="videos">Gameplay Videos</h2>
 
 <section class="section">
 
@@ -269,29 +186,31 @@ allowfullscreen>
 </iframe>
 </div>
 
+<p>
+<a class="btn" href="https://www.youtube.com/results?search_query=minecraft+gameplay" target="_blank">
+Watch More Minecraft Videos
+</a>
+</p>
+
 </section>
 
 <h2 class="section-title">Latest Gaming News</h2>
 
-<section class="section">
+<section class="games">
 
 <div class="card">
 <h3>🎮 GTA VI</h3>
-<p>Rockstar Games continues working on GTA VI with exciting new features and improved graphics.</p>
+<p>Rockstar Games continues to reveal exciting updates about GTA VI.</p>
 </div>
-
-<br>
 
 <div class="card">
 <h3>⛏ Minecraft</h3>
-<p>New updates add more blocks, mobs and adventures for players around the world.</p>
+<p>New Minecraft updates introduce fresh blocks, mobs and adventures.</p>
 </div>
 
-<br>
-
 <div class="card">
-<h3>🏆 PUBG</h3>
-<p>New maps, weapons and tournaments are available in the latest PUBG update.</p>
+<h3>🏆 BGMI</h3>
+<p>New BGMI tournaments, maps and rewards are now available.</p>
 </div>
 
 </section>
@@ -301,67 +220,12 @@ allowfullscreen>
 <section class="section">
 
 <p style="font-size:20px;">📧 Email: kingsgame@email.com</p>
-
 <br>
-
 <p style="font-size:20px;">▶ YouTube: Kings Game</p>
-
 <br>
-
 <p style="font-size:20px;">💬 Discord: Coming Soon</p>
 
-  </section>
-  <section class="news">
-<h2>Featured Game</h2>
-
-<h3>Minecraft</h3>
-<p>
-Minecraft is one of the world's most popular sandbox games.
-Build amazing structures, explore caves, survive monsters,
-and play with friends online.
-</p>
-
-<a class="btn" href="https://www.minecraft.net" target="_blank">
-Official Minecraft Website
-</a>
-
-  </section>
-  <section id="videos" class="news">
-<h2>Gameplay Videos</h2>
-
-<a class="btn"
-href="https://www.youtube.com/results?search_query=minecraft+gameplay"
-target="_blank">
-▶ Watch Minecraft Gameplay
-</a>
-
-<br><br>
-
-<a class="btn"
-href="https://www.youtube.com/results?search_query=gta+5+gameplay"
-target="_blank">
-▶ Watch GTA V Gameplay
-</a>
-
-<br><br>
-
-<a class="btn"
-href="https://www.youtube.com/results?search_query=bgmi+gameplay"
-target="_blank">
-▶ Watch BGMI Gameplay
-</a>
-
-<br><br>
-
-<a class="btn"
-href="https://www.youtube.com/results?search_query=free+fire+gameplay"
-target="_blank">
-▶ Watch Free Fire Gameplay
-</a>
-
-  </section>
-
-
+</section>
 <footer>
 
 <p>© 2026 Kings Game. All Rights Reserved.</p>
@@ -369,35 +233,26 @@ target="_blank">
 <br>
 
 <p>
-
 <a href="#">Home</a> |
-
 <a href="#games">Games</a> |
-
 <a href="#videos">Videos</a> |
-
 <a href="#contact">Contact</a>
-
 </p>
 
 </footer>
 
 <script>
 
-const cards=document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
 
-cards.forEach(card=>{
+cards.forEach(card => {
 
-card.addEventListener("mouseenter",()=>{
-
-card.style.boxShadow="0 0 25px #00ff99";
-
+card.addEventListener("mouseenter", () => {
+card.style.boxShadow = "0 0 25px #00ff99";
 });
 
-card.addEventListener("mouseleave",()=>{
-
-card.style.boxShadow="none";
-
+card.addEventListener("mouseleave", () => {
+card.style.boxShadow = "none";
 });
 
 });
