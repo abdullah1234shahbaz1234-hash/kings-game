@@ -1,43 +1,249 @@
-minecraft.net" target="_blank">
-Official Minecraft Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kings Game</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#0d1117;
+color:#fff;
+}
+
+header{
+background:linear-gradient(90deg,#6a00ff,#8e2de2);
+padding:20px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header h1{
+text-align:center;
+font-size:42px;
+}
+
+nav{
+margin-top:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 18px;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ff99;
+}
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,.65);
+padding:40px;
+border-radius:20px;
+max-width:700px;
+}
+
+.hero h2{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#00c853;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#00e676;
+transform:scale(1.05);
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin:60px 0 30px;
+}
+
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1200
+  footer{
+background:#111;
+padding:25px;
+text-align:center;
+margin-top:40px;
+}
+
+footer a{
+color:#00ff99;
+text-decoration:none;
+margin:0 10px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.video iframe{
+height:250px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🎮 Kings Game</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#games">Games</a>
+<a href="#videos">Videos</a>
+<a href="#news">News</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Welcome to Kings Game</h2>
+
+<p>Discover the latest games, gameplay videos and gaming news.</p>
+
+<a class="btn" href="#games">Explore Games</a>
+
+</div>
+
+</section>
+
+<h2 class="section-title" id="games">Popular Games</h2>
+
+<section class="games">
+
+<a class="card" href="https://www.minecraft.net/" target="_blank">
+<img src="a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a.jpeg" alt="Minecraft">
+<h3>Minecraft</h3>
+<p>Build, explore and survive in an endless world.</p>
 </a>
 
-  </section>
-  <section id="videos" class="news">
-<h2>Gameplay Videos</h2>
+<a class="card" href="https://www.rockstargames.com/gta-v"
+
+<h2 class="section-title" id="videos">Gameplay Videos</h2>
+
+<section class="section">
+
+<div class="video">
+
+<iframe
+src="https://www.youtube.com/embed/MMB80A4Xz4Q"
+title="Minecraft Gameplay"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<br><br>
 
 <a class="btn"
 href="https://www.youtube.com/results?search_query=minecraft+gameplay"
 target="_blank">
-▶ Watch Minecraft Gameplay
+▶ Watch More Minecraft Videos
 </a>
 
-<br><br>
+</section>
 
-<a class="btn"
-href="https://www.youtube.com/results?search_query=gta+5+gameplay"
-target="_blank">
-▶ Watch GTA V Gameplay
-</a>
+<h2 class="section-title" id="news">Latest Gaming News</h2>
 
-<br><br>
+<section class="news">
 
-<a class="btn"
-href="https://www.youtube.com/results?search_query=bgmi+gameplay"
-target="_blank">
-▶ Watch BGMI Gameplay
-</a>
+<div class="news-card">
+<h3>🎮 GTA VI</h3>
+<p>Rockstar Games continues to reveal exciting updates about GTA VI with improved graphics and a larger open world.</p>
+</div>
 
-<br><br>
+<div class="news-card">
+<h3>⛏ Minecraft</h3>
+<p>New Minecraft updates introduce fresh blocks, mobs, villages and adventures for players.</p>
+</div>
 
-<a class="btn"
-href="https://www.youtube.com/results?search_query=free+fire+gameplay"
-target="_blank">
-▶ Watch Free Fire Gameplay
-</a>
+<div class="news-card">
+<h3>🏆 BGMI</h3>
+<p>New BGMI tournaments, maps and rewards are now available for mobile gamers.</p>
+</div>
 
-  </section>
+<div class="news-card">
+<h3>🔥 Free Fire</h3>
+<p>Free Fire continues adding new characters, events and
+<h2 class="section-title" id="contact">Contact Us</h2>
 
+<section class="section">
+
+<p style="font-size:20px;">📧 Email: kingsgame@email.com</p>
+
+<br>
+
+<p style="font-size:20px;">▶ YouTube: Kings Game</p>
+
+<br>
+
+<p style="font-size:20px;">💬 Discord: Coming Soon</p>
+
+</section>
 
 <footer>
 
@@ -46,15 +252,11 @@ target="_blank">
 <br>
 
 <p>
-
 <a href="#">Home</a> |
-
 <a href="#games">Games</a> |
-
 <a href="#videos">Videos</a> |
-
+<a href="#news">News</a> |
 <a href="#contact">Contact</a>
-
 </p>
 
 </footer>
@@ -82,182 +284,4 @@ card.style.boxShadow="none";
 </script>
 
 </body>
-</html>
-.section{
-padding:60px 20px;
-text-align:center;
-}
-
-.video{
-display:flex;
-justify-content:center;
-padding:30px;
-}
-
-.video iframe{
-width:90%;
-max-width:900px;
-height:500px;
-border:none;
-border-radius:15px;
-}
-
-footer{
-background:#111;
-padding:25px;
-text-align:center;
-margin-top:40px;
-}
-
-footer a{
-color:#00ff99;
-text-decoration:none;
-margin:0 10px;
-}
-
-@media(max-width:768px){
-
-.hero h2{
-font-size:35px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.section-title{
-font-size:30px;
-}
-
-.video iframe{
-height:250px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<h1>🎮 Kings Game</h1>
-
-<nav>
-<a href="#">Home</a>
-<a href="#games">Games</a>
-<a href="#videos">Videos</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h2>Welcome to Kings Game</h2>
-
-<p>Discover the latest games, gameplay videos and gaming news.</p>
-
-<a class="btn" href="#games">Explore Games</a>
-
-</div>
-
-</section>
-
-<h2 class="section-title" id="games">Popular Games</h2>
-
-<section class="games">
-
-<div class="card">
-<a href="https://www.minecraft.net/" target="_blank">
-<img src="a28a81253e919298beab2295e  
-  <h2 class="section-title" id="videos">Gameplay Videos</h2>
-
-<section class="section">
-
-<div class="video">
-<iframe
-src="https://www.youtube.com/embed/MMB80A4Xz4Q"
-title="Minecraft Gameplay"
-allowfullscreen>
-</iframe>
-</div>
-
-<p>
-<a class="btn" href="https://www.youtube.com/results?search_query=minecraft+gameplay" target="_blank">
-Watch More Minecraft Videos
-</a>
-</p>
-
-</section>
-
-<h2 class="section-title">Latest Gaming News</h2>
-
-<section class="games">
-
-<div class="card">
-<h3>🎮 GTA VI</h3>
-<p>Rockstar Games continues to reveal exciting updates about GTA VI.</p>
-</div>
-
-<div class="card">
-<h3>⛏ Minecraft</h3>
-<p>New Minecraft updates introduce fresh blocks, mobs and adventures.</p>
-</div>
-
-<div class="card">
-<h3>🏆 BGMI</h3>
-<p>New BGMI tournaments, maps and rewards are now available.</p>
-</div>
-
-</section>
-
-<h2 class="section-title" id="contact">Contact Us</h2>
-
-<section class="section">
-
-<p style="font-size:20px;">📧 Email: kingsgame@email.com</p>
-<br>
-<p style="font-size:20px;">▶ YouTube: Kings Game</p>
-<br>
-<p style="font-size:20px;">💬 Discord: Coming Soon</p>
-
-</section>
-<footer>
-
-<p>© 2026 Kings Game. All Rights Reserved.</p>
-
-<br>
-
-<p>
-<a href="#">Home</a> |
-<a href="#games">Games</a> |
-<a href="#videos">Videos</a> |
-<a href="#contact">Contact</a>
-</p>
-
-</footer>
-
-<script>
-
-const cards = document.querySelectorAll(".card");
-
-cards.forEach(card => {
-
-card.addEventListener("mouseenter", () => {
-card.style.boxShadow = "0 0 25px #00ff99";
-});
-
-card.addEventListener("mouseleave", () => {
-card.style.boxShadow = "none";
-});
-
-});
-
-</script>
-
-</body>
-</html>
+  </html>
