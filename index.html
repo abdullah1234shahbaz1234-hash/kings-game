@@ -1,33 +1,366 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kings Game</title>
-<style>
-body{margin:0;font-family:Arial;background:#0d1117;color:#fff}
-header{background:linear-gradient(90deg,#6a00ff,#9c27ff);padding:20px;text-align:center;position:sticky;top:0}
-nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
-.hero{padding:70px 20px;text-align:center;background:#161b22}
-.btn{display:inline-block;background:#00c853;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none}
-.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px}
-.card{background:#161b22;border-radius:12px;overflow:hidden;text-decoration:none;color:#fff}
-.card img{width:100%;height:200px;object-fit:cover}
-.card h3,.card p{padding:0 15px}
-footer{text-align:center;padding:20px;background:#111}
-</style></head>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
 <body>
-<header><h1>🎮 Kings Game</h1>
-<nav><a href="#games">Games</a> <a href="#videos">Videos</a> <a href="#contact">Contact</a></nav>
+
+<header>
+
+<div class="logo">
+🎮 Kings Game
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#games">Games</a></li>
+
+<li><a href="#videos">Videos</a></li>
+
+<li><a href="#news">News</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
-<section class="hero"><h2>Welcome to Kings Game</h2><p>Discover amazing games.</p><a class="btn" href="#games">Explore Games</a></section>
-<h2 style="text-align:center" id="games">Popular Games</h2>
-<section class="games">
-<a class="card" href="https://www.minecraft.net/" target="_blank"><img src="a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a.jpeg"><h3>Minecraft</h3><p>Official website</p></a>
-<a class="card" href="https://www.rockstargames.com/gta-v" target="_blank"><img src="v_640x400.jpg"><h3>GTA V</h3><p>Official website</p></a>
-<a class="card" href="https://www.battlegroundsmobileindia.com/" target="_blank"><img src="Battleground_Mobile_India.webp.png"><h3>BGMI</h3><p>Official website</p></a>
-<a class="card" href="https://ff.garena.com/" target="_blank"><img src="Free_Fire.webp"><h3>Free Fire</h3><p>Official website</p></a>
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h1>Welcome to Kings Game</h1>
+
+<p>
+Discover the latest games, gameplay videos, gaming news,
+tips and official game websites all in one place.
+</p>
+
+<a href="#games" class="btn">
+Explore Games
+</a>
+
+</div>
+
 </section>
-<h2 id="videos" style="text-align:center">Gameplay Videos</h2>
-<p style="text-align:center"><a class="btn" href="https://www.youtube.com/results?search_query=minecraft+gameplay" target="_blank">Watch Gameplay</a></p>
-<h2 id="contact" style="text-align:center">Contact</h2>
-<p style="text-align:center">Email: kingsgame@email.com</p>
-<footer>© 2026 Kings Game</footer>
-</body></html>
+
+<section id="about" class="about">
+
+<h2>About Us</h2>
+
+<p>
+
+Kings Game is your gaming hub where you can explore
+popular games, watch gameplay videos,
+read gaming news and visit official game websites.
+
+</p>
+
+<div class="about-box">
+
+<div class="about-card">
+
+<h3>🎮 Popular Games</h3>
+
+<p>
+Find the world's most popular PC and mobile games.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>▶ Gameplay Videos</h3>
+
+<p>
+Watch exciting gameplay videos from your favorite games.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>📰 Latest News</h3>
+
+<p>
+Stay updated with the newest gaming announcements.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="games">
+
+<h2 class="title">
+Popular Games
+</h2>
+
+<div class="game-grid">
+
+<a class="game-card"
+href="https://www.minecraft.net/"
+target="_blank">
+
+<img src="a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a.jpeg"
+alt="Minecraft">
+
+<h3>Minecraft</h3>
+
+<p>
+Build, explore and survive in an endless world.
+</p>
+
+</a>
+
+<a class="game-card"
+href="https://www.rockstargames.com/gta-v"
+target="_blank">
+
+<img src="v_640x400.jpg"
+alt="GTA V">
+
+<h3>GTA V</h3>
+
+<p>
+Experience the ultimate open-world adventure.
+</p>
+
+</a>
+<a class="game-card"
+href="https://www.battlegroundsmobileindia.com/"
+target="_blank">
+
+<img src="Battleground_Mobile_India.webp.png"
+alt="BGMI">
+
+<h3>BGMI</h3>
+
+<p>
+Battle against players and become the last one standing.
+</p>
+
+</a>
+
+<a class="game-card"
+href="https://ff.garena.com/"
+target="_blank">
+
+<img src="Free_Fire.webp"
+alt="Free Fire">
+
+<h3>Free Fire</h3>
+
+<p>
+Fast-paced battle royale action with exciting characters.
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+<section id="videos" class="videos">
+
+<h2 class="title">
+Gameplay Videos
+</h2>
+
+<div class="video-grid">
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/MMB80A4Xz4Q"
+title="Minecraft Gameplay"
+allowfullscreen>
+</iframe>
+
+<h3>Minecraft Gameplay</h3>
+
+</div>
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/QkkoHAzjnUs"
+title="GTA V Gameplay"
+allowfullscreen>
+</iframe>
+
+<h3>GTA V Gameplay</h3>
+
+</div>
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/q8M0kQ8A6dQ"
+title="BGMI Gameplay"
+allowfullscreen>
+</iframe>
+
+<h3>BGMI Gameplay</h3>
+
+</div>
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/6H0J8Va0JwQ"
+title="Free Fire Gameplay"
+allowfullscreen>
+</iframe>
+
+<h3>Free Fire Gameplay</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="news" class="news">
+
+<h2 class="title">
+Latest Gaming News
+</h2>
+
+<div class="news-grid">
+
+<div class="news-card">
+
+<h3>🎮 GTA VI</h3>
+
+<p>
+Rockstar Games continues to share exciting updates about GTA VI.
+</p>
+
+</div>
+
+<div class="news-card">
+
+<h3>⛏ Minecraft</h3>
+
+<p>
+Minecraft keeps expanding with new mobs, blocks and adventures.
+</p>
+
+</div>
+
+<div class="news-card">
+
+<h3>🔥 Free Fire</h3>
+
+<p>
+New events, rewards and characters are arriving regularly.
+</p>
+
+</div>
+
+</div>
+
+</section>
+  <section id="featured" class="featured">
+
+<h2 class="title">
+Featured Game
+</h2>
+
+<div class="featured-card">
+
+<img src="a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a.jpeg"
+alt="Minecraft">
+
+<div class="featured-text">
+
+<h3>Minecraft</h3>
+
+<p>
+Minecraft is one of the world's most popular sandbox games.
+Build incredible structures, explore caves, survive dangerous
+mobs and play with friends online.
+</p>
+
+<a href="https://www.minecraft.net/"
+target="_blank"
+class="btn">
+Visit Official Website
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">
+Contact Us
+</h2>
+
+<div class="contact-box">
+
+<p>📧 Email: kingsgame@email.com</p>
+
+<p>▶ YouTube: Kings Game</p>
+
+<p>💬 Discord: Coming Soon</p>
+
+<p>🌐 Website: Kings Game</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Kings Game. All Rights Reserved.
+</p>
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#games">Games</a>
+
+<a href="#videos">Videos</a>
+
+<a href="#news">News</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
